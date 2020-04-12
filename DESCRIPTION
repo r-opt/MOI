@@ -1,0 +1,38 @@
+Package: MOI
+Title: An Abstract Mathematical Optimization Interface
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+        person(given = "Dirk",
+               family = "Schumacher",
+               role = c("aut", "cre"),
+               email = "mail@dirk-schumacher.net"),
+               person(given = "Authors of MathOptInterface.jl",
+               role = c("ctb"),
+               comment = "Conceptually the same as MathOptInterface.jl (MIT)")
+    )
+Description: An abstract interface for optimization packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Collate: 
+    'sets.R'
+    'model-attributes.R'
+    'indextypes.R'
+    'functions.R'
+    'constraint-attributes.R'
+    'variable-attributes.R'
+    'model.R'
+    'cache-model.R'
+    'moi-package.R'
+    'optimizer-attributes.R'
+    'optimizer.R'
+    'result-status.R'
+    'termination-status.R'
+    'utils.R'
+Suggests: 
+    testthat (>= 2.1.0)
+Imports: 
+    methods,
+    fastmap
