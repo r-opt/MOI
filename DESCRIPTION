@@ -32,8 +32,8 @@ Collate:
     'termination-status.R'
     'utils.R'
 Suggests: 
-    testthat (>= 2.1.0),
-    R6
+    testthat (>= 2.1.0)
 Imports: 
+    R6,
     methods,
     fastmap
