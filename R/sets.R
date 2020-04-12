@@ -41,6 +41,12 @@ setClass("MOI_zero_one_set", contains = "MOI_integer_set")
 integer_set <- new("MOI_integer_set")
 
 #' @export
+equal_to_set <- equal_to_set <- function(value) {
+  stopifnot(is.numeric(value), length(value) == 1)
+  new("MOI_equal_to_set", value = value)
+}
+
+#' @export
 zero_one_set <- new("MOI_zero_one_set")
 
 #' @export
