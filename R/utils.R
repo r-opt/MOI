@@ -1,9 +1,13 @@
+#' Bring object to a canonical form
+#' @param x an object
 #' @export
+#' @rdname canonicalize
 setGeneric("canonicalize", function(x) {
   standardGeneric("canonicalize")
 })
 
 #' @export
+#' @rdname canonicalize
 setMethod("canonicalize", signature = "MOI_scalar_affine_function", function(x) {
   term_map <- list()
   for (term in x@terms) {
@@ -21,6 +25,7 @@ setMethod("canonicalize", signature = "MOI_scalar_affine_function", function(x) 
 })
 
 #' @export
+#' @rdname canonicalize
 setMethod("canonicalize", signature = "MOI_scalar_quadratic_function", function(x) {
   #TODO: remove duplicate code
   term_map <- list()

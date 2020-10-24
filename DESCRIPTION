@@ -5,10 +5,10 @@ Authors@R:
     c(
         person(given = "Dirk",
                family = "Schumacher",
-               role = c("aut", "cre"),
+               role = c("aut", "cre", "cph"),
                email = "mail@dirk-schumacher.net"),
                person(given = "Authors of MathOptInterface.jl",
-               role = c("ctb"),
+               role = c("ctb", "cph"),
                comment = "Conceptually the same as MathOptInterface.jl (MIT)")
     )
 Description: An abstract interface for optimization packages.

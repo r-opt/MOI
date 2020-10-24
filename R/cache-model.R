@@ -1,7 +1,8 @@
-#' In-Memory backend that simply stores everything in memory and matrix form
+#' In-Memory backend that simply stores everything in-memory
 #'
 #' @keywords internal
 #' @include model.R
+#' @rdname CacheModelClass-class
 #' @export
 setClass("cache_model_class", contains = "MOI_abstract_model", slot = c(ptr = "ANY"))
 
@@ -26,6 +27,8 @@ CacheModelClassR6 <- R6::R6Class(
   )
 )
 
+#' Create a new cache_model
+#'
 #' @export
 cache_model <- function() {
   new("cache_model_class", ptr = CacheModelClassR6$new())
