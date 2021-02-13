@@ -18,3 +18,9 @@ Currently work in progress and experimental.
 # License
 
 MIT (same as MathOptInterface.jl)
+
+# References
+
+Legat, B., Dowson, O., Garcia, J. D., & Lubin, M. (2020).
+MathOptInterface: a data structure for mathematical optimization
+problems. arXiv preprint arXiv:2002.03447.
