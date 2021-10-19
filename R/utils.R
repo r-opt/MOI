@@ -18,10 +18,10 @@ setMethod("canonicalize", signature = "MOI_scalar_affine_function", function(x) 
     coefficient <- Reduce(function(acc, el) {
       acc + el@coefficient
     }, terms, init = 0)
-    scalar_affine_term(coefficient, terms[[1L]]@variable)
+    moi_scalar_affine_term(coefficient, terms[[1L]]@variable)
   })
   names(terms) <- NULL
-  scalar_affine_function(terms, x@constant)
+  moi_scalar_affine_function(terms, x@constant)
 })
 
 #' @export
@@ -42,12 +42,12 @@ setMethod("canonicalize", signature = "MOI_scalar_quadratic_function", function(
     coefficient <- Reduce(function(acc, el) {
       acc + el@coefficient
     }, terms, init = 0)
-    scalar_quadratic_term(coefficient, terms[[1L]]@variable1, terms[[1L]]@variable2)
+    moi_scalar_quadratic_term(coefficient, terms[[1L]]@variable1, terms[[1L]]@variable2)
   })
   names(quad_terms) <- NULL
-  scalar_quadratic_function(
+  moi_scalar_quadratic_function(
     quad_terms,
-    canonicalize(scalar_affine_function(x@affine_terms, 0))@terms,
+    canonicalize(moi_scalar_affine_function(x@affine_terms, 0))@terms,
     x@constant
   )
 })

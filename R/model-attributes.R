@@ -8,7 +8,7 @@ setClass("MOI_number_of_variables", contains = "MOI_abstract_model_attribute")
 
 #' Number of variables attribute
 #' @export
-number_of_variables <- new("MOI_number_of_variables")
+moi_number_of_variables <- new("MOI_number_of_variables")
 
 #' Number of constraints attribute class
 #' @export
@@ -16,7 +16,7 @@ setClass("MOI_number_of_constraints", contains = "MOI_abstract_model_attribute")
 
 #' Number of constraints attribute
 #' @export
-number_of_constraints <- new("MOI_number_of_constraints")
+moi_number_of_constraints <- new("MOI_number_of_constraints")
 
 #' Objective sense attribute class
 #' @export
@@ -28,11 +28,11 @@ setClass("MOI_objective_function", contains = "MOI_abstract_model_attribute")
 
 #' Objective sense attribute
 #' @export
-objective_sense <- new("MOI_objective_sense")
+moi_objective_sense <- new("MOI_objective_sense")
 
 #' Objective function attribute
 #' @export
-objective_function <- new("MOI_objective_function")
+moi_objective_function <- new("MOI_objective_function")
 
 #' Optimization sense attribute class
 #' @export
@@ -52,12 +52,12 @@ setClass("MOI_optimization_sense_feasibility", contains = "MOI_optimization_sens
 
 #' Optimization min attribute
 #' @export
-MIN_SENSE <- new("MOI_optimization_sense_min")
+MOI_MIN_SENSE <- new("MOI_optimization_sense_min")
 
 #' Optimization max attribute
 #' @export
-MAX_SENSE <- new("MOI_optimization_sense_max")
+MOI_MAX_SENSE <- new("MOI_optimization_sense_max")
 
 #' Optimization feasibility sense attribute
 #' @export
-FEASIBILITY_SENSE <- new("MOI_optimization_sense_feasibility")
+MOI_FEASIBILITY_SENSE <- new("MOI_optimization_sense_feasibility")

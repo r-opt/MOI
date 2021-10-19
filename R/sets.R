@@ -67,14 +67,14 @@ setClass("MOI_zero_one_set", contains = "MOI_integer_set")
 #' An instance of an integer set
 #'
 #' @export
-integer_set <- new("MOI_integer_set")
+moi_integer_set <- new("MOI_integer_set")
 
 #' An instance of an equal-to set
 #'
 #' @param value a length 1 numeric vector
 #'
 #' @export
-equal_to_set <- function(value) {
+moi_equal_to_set <- function(value) {
   stopifnot(is.numeric(value), length(value) == 1)
   new("MOI_equal_to_set", value = value)
 }
@@ -84,14 +84,14 @@ equal_to_set <- function(value) {
 #' All elements must be integral and 0/1.
 #'
 #' @export
-zero_one_set <- new("MOI_zero_one_set")
+moi_zero_one_set <- new("MOI_zero_one_set")
 
 #' An instance of a less than or equal set
 #'
 #' @param upper a length 1 numeric vector
 #'
 #' @export
-less_than_set <- function(upper) {
+moi_less_than_set <- function(upper) {
   stopifnot(is.numeric(upper), length(upper) == 1)
   new("MOI_less_than_set", upper = upper)
 }
@@ -101,7 +101,7 @@ less_than_set <- function(upper) {
 #' @param lower a length 1 numeric vector
 #'
 #' @export
-greater_than_set <- function(lower) {
+moi_greater_than_set <- function(lower) {
   stopifnot(is.numeric(lower), length(lower) == 1)
   new("MOI_greater_than_set", lower = lower)
 }
@@ -112,7 +112,7 @@ greater_than_set <- function(lower) {
 #' @param upper a length 1 numeric vector
 #'
 #' @export
-interval_set <- function(lower, upper) {
+moi_interval_set <- function(lower, upper) {
   stopifnot(
     is.numeric(lower), length(lower) == 1,
     is.numeric(upper), length(upper) == 1

@@ -32,7 +32,7 @@ setGeneric("moi_add_constraint", function(model, func, set) {
 #' @export
 setMethod("moi_add_constrained_variable", signature("MOI_abstract_model"), function(model, set) {
   variable <- moi_add_variable(model)
-  constraint <- moi_add_constraint(model, single_variable(variable), set)
+  constraint <- moi_add_constraint(model, moi_single_variable(variable), set)
   list(variable, constraint)
 })
 
