@@ -1,6 +1,6 @@
 Package: MOI
 Title: An Abstract Mathematical Optimization Interface
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     c(
         person(given = "Dirk",
@@ -16,7 +16,7 @@ Description: An abstract interface for optimization packages. It is based on
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Collate: 
     'sets.R'
     'model-attributes.R'

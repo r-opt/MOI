@@ -12,7 +12,7 @@ setClass("MOI_single_variable",
 )
 
 #' @export
-single_variable <- function(variable_index) {
+moi_single_variable <- function(variable_index) {
   new("MOI_single_variable", variable = variable_index)
 }
 
@@ -23,7 +23,7 @@ setClass("MOI_scalar_affine_term",
 )
 
 #' @export
-scalar_affine_term <- function(coefficient, variable) {
+moi_scalar_affine_term <- function(coefficient, variable) {
   new("MOI_scalar_affine_term", coefficient = coefficient, variable = variable)
 }
 
@@ -34,7 +34,7 @@ setClass("MOI_scalar_affine_function",
 )
 
 #' @export
-scalar_affine_function <- function(terms, constant) {
+moi_scalar_affine_function <- function(terms, constant) {
   if (!is.list(terms)) {
     terms <- as.list(terms)
   }
@@ -52,7 +52,7 @@ setClass("MOI_scalar_quadratic_term",
 )
 
 #' @export
-scalar_quadratic_term <- function(coefficient, variable1, variable2) {
+moi_scalar_quadratic_term <- function(coefficient, variable1, variable2) {
   new("MOI_scalar_quadratic_term", coefficient = coefficient,
       variable1 = variable1, variable2 = variable2)
 }
@@ -68,7 +68,7 @@ setClass("MOI_scalar_quadratic_function",
 )
 
 #' @export
-scalar_quadratic_function <- function(quadratic_terms, affine_terms, constant) {
+moi_scalar_quadratic_function <- function(quadratic_terms, affine_terms, constant) {
   new("MOI_scalar_quadratic_function", constant = constant,
       affine_terms = affine_terms, quadratic_terms = quadratic_terms)
 }

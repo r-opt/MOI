@@ -30,7 +30,7 @@ CacheModelClassR6 <- R6::R6Class(
 #' Create a new cache_model
 #'
 #' @export
-cache_model <- function() {
+moi_cache_model <- function() {
   new("cache_model_class", ptr = CacheModelClassR6$new())
 }
 

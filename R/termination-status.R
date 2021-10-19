@@ -29,24 +29,24 @@ setClass("MOI_other_error_termination_status_code", contains = "MOI_termination_
 #' Status codes
 #' @rdname status_codes
 #' @export
-OPTIMIZE_NOT_CALLED <- new("MOI_optimize_not_called_termination_status_code")
+MOI_OPTIMIZE_NOT_CALLED <- new("MOI_optimize_not_called_termination_status_code")
 
 #' @export
 #' @rdname status_codes
-OPTIMAL <- new("MOI_optimal_termination_status_code")
+MOI_OPTIMAL <- new("MOI_optimal_termination_status_code")
 
 #' @export
 #' @rdname status_codes
-SUCCESS <- new("MOI_success_termination_status_code")
+MOI_SUCCESS <- new("MOI_success_termination_status_code")
 
 #' @export
 #' @rdname status_codes
-OTHER_ERROR <- new("MOI_other_error_termination_status_code")
+MOI_OTHER_ERROR <- new("MOI_other_error_termination_status_code")
 
 #' @export
 #' @rdname status_codes
-INFEASIBLE <- new("MOI_infeasible_termination_status_code")
+MOI_INFEASIBLE <- new("MOI_infeasible_termination_status_code")
 
 #' @export
 #' @rdname status_codes
-INFEASIBLE_OR_UNBOUNDED <- new("MOI_infeasible_or_unbounded_termination_status_code")
+MOI_INFEASIBLE_OR_UNBOUNDED <- new("MOI_infeasible_or_unbounded_termination_status_code")
