@@ -40,4 +40,5 @@ test_that("larger example works", {
   )
   moi_add_constraint(model, single_variable(x[[1]]), greater_than_set(0.0))
   moi_add_constraint(model, single_variable(x[[2]]), greater_than_set(-1.0))
+  expect_equal(model@ptr$variables, x)
 })
