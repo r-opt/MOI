@@ -96,6 +96,7 @@ setMethod("moi_add_constraint", signature("cache_model_class", "MOI_abstract_ind
   model@ptr$add_constraint(func, set)
 })
 
+#' Add a constraint variable to a cached model
 #' @export
 #' @rdname CacheModelClass-class
 setMethod("moi_add_constrained_variable", signature("cache_model_class", "MOI_abstract_set"), function(model, set) {

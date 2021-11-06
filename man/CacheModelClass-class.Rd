@@ -37,5 +37,7 @@
 }
 \description{
 In-Memory backend that simply stores everything in-memory
+
+Add a constraint variable to a cached model
 }
 \keyword{internal}
