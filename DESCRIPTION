@@ -32,6 +32,7 @@ Collate:
     'termination-status.R'
     'utils.R'
 Suggests: 
+    covr,
     testthat (>= 2.1.0)
 Imports: 
     R6,

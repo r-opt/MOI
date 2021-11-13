@@ -8,6 +8,8 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![R-CMD-check](https://github.com/r-opt/MOI/workflows/R-CMD-check/badge.svg)](https://github.com/r-opt/MOI/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/r-opt/MOI/branch/master/graph/badge.svg)](https://app.codecov.io/gh/r-opt/MOI?branch=master)
 <!-- badges: end -->
 
 `MOI` is an R port of the [MOI julia
